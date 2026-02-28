@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { 
   HiAcademicCap, 
   HiArrowRight, 
@@ -12,6 +13,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   // Animation variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
@@ -64,7 +67,10 @@ const HomePage = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 items-center">
-                <button className="inline-flex items-center gap-2 rounded-full bg-red-600 px-6 py-3 text-base font-semibold text-white hover:bg-red-700 transition-all">
+                <button 
+                  onClick={() => navigate('/quiz')}
+                  className="inline-flex items-center gap-2 rounded-full bg-red-600 px-6 py-3 text-base font-semibold text-white hover:bg-red-700 transition-all"
+                >
                   Bắt đầu hành trình
                   <svg
                     className="h-4 w-4"
@@ -270,8 +276,11 @@ const HomePage = () => {
             mở khóa những phần quà hấp dẫn.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="rounded-full bg-white px-8 py-3 text-base font-semibold text-gray-900 hover:bg-gray-100 transition-colors shadow-lg">
-              Đăng ký miễn phí
+            <button 
+              onClick={() => navigate('/quiz')}
+              className="rounded-full bg-white px-8 py-3 text-base font-semibold text-gray-900 hover:bg-gray-100 transition-colors shadow-lg"
+            >
+              Bắt đầu Quiz
             </button>
             <button className="rounded-full border-2 border-white px-8 py-3 text-base font-semibold text-white hover:bg-white hover:text-gray-900 transition-colors">
               Đăng nhập →

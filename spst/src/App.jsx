@@ -1,11 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import HomePage from './pages/HomePage'
+import QuizPage from './pages/QuizPage'
 import './App.css'
 
 function App() {
   return (
-    <>
-      <HomePage />
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/quiz" element={<QuizPage />} />
+      </Routes>
       <Toaster 
         position="top-right"
         toastOptions={{
@@ -26,7 +31,7 @@ function App() {
           },
         }}
       />
-    </>
+    </Router>
   )
 }
 
