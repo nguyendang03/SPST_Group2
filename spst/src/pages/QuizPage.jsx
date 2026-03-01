@@ -42,13 +42,6 @@ const QuizPage = () => {
     const isCorrect = selectedAnswer === currentQuestion.correctAnswerIndex;
     const pointsEarned = isCorrect ? timeLeft * 10 : 0;
 
-    if (isCorrect) {
-      setScore(score + pointsEarned);
-      toast.success(`Chính xác! +${pointsEarned} điểm`);
-    } else {
-      toast.error('Sai rồi!');
-    }
-
     setUserAnswers([...userAnswers, {
       questionId: currentQuestion.id,
       selectedAnswer,
