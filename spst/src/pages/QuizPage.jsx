@@ -27,6 +27,11 @@ const QuizPage = () => {
   const [consecutiveCorrect, setConsecutiveCorrect] = useState(0);
   const [currentCombo, setCurrentCombo] = useState(0);
   const [maxCombo, setMaxCombo] = useState(0);
+  
+  // HP system states
+  const [currentHP, setCurrentHP] = useState(100);
+  const maxHP = 100;
+  const [isExhausted, setIsExhausted] = useState(false);
 
   const currentQuestion = gameData[currentQuestionIndex];
   const totalQuestions = gameData.length;
@@ -57,9 +62,57 @@ const QuizPage = () => {
 
     }
     
-    // Calculate points with combo multiplier
-    const basePoints = isCorrect ? timeLeft * 10 : 0;
-    const pointsEarned = Math.floor(basePoints * comboMultiplier);
+    // HP System Logic
+    let newHP = currentHP;
+    let newScore = score;
+    let pointsEarned = 0;
+    
+    if (isCorrect) {
+      if (isExhausted) {
+        // Exhausted + Correct: Restore 30 HP and get 50% points
+        newHP = Math.min(currentHP + 30, maxHP);
+        const basePoints = timeLeft * 10;
+        pointsEarned = Math.floor(basePoints * comboMultiplier * 0.5); // 50% of normal points
+        newScore = score + pointsEarned;
+        
+        // Check if no longer exhausted
+        if (newHP > 0) {
+          setIsExhausted(false);
+          toast.success('Đã phục hồi! +30 HP và +' + pointsEarned + ' pts (50%)');
+        } else {
+          toast('Hồi phục một chút... +30 HP', { icon: '💊' });
+        }
+      } else {
+        // Normal correct answer
+        const basePoints = timeLeft * 10;
+        pointsEarned = Math.floor(basePoints * comboMultiplier);
+        newScore = score + pointsEarned;
+      }
+    } else {
+      // Wrong answer
+      if (isExhausted) {
+        // Exhausted + Wrong: Lose score directly (but never go below 0)
+        const penalty = 100; // Penalty for wrong answer when exhausted
+        newScore = Math.max(score - penalty, 0);
+        toast.error('Kiệt sức! -' + penalty + ' điểm');
+      } else {
+        // Normal wrong answer: Lose 10 HP
+        newHP = Math.max(currentHP - 10, 0);
+        
+        if (newHP === 0) {
+          setIsExhausted(true);
+          toast.error('HP = 0! Trạng thái KIỆT SỨC!', {
+            duration: 4000,
+            icon: '⚠️'
+          });
+        } else {
+          toast.error('-10 HP');
+        }
+      }
+    }
+    
+    // Update HP
+    setCurrentHP(newHP);
     
     // Update combo states
     setConsecutiveCorrect(newConsecutiveCorrect);
@@ -79,7 +132,7 @@ const QuizPage = () => {
     setUserAnswers([...userAnswers, newAnswer]);
 
     // Update total score
-    setScore(score + pointsEarned);
+    setScore(newScore);
 
     setLastAnswerCorrect(isCorrect);
     setShowExplanation(true);
@@ -169,12 +222,6 @@ const QuizPage = () => {
     return () => window.removeEventListener('keydown', handleKeyPress);
   }, [showExplanationScreen, handleNextQuestion]);
 
-  const handlePreviousQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(currentQuestionIndex - 1);
-    }
-  };
-
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
 
@@ -200,6 +247,9 @@ const QuizPage = () => {
     setConsecutiveCorrect(0);
     setCurrentCombo(0);
     setMaxCombo(0);
+    // Reset HP states
+    setCurrentHP(100);
+    setIsExhausted(false);
   };
 
   // Result Screen
@@ -234,6 +284,41 @@ const QuizPage = () => {
 
             {/* Score and User */}
             <div className="flex items-center gap-6">
+              {/* HP Bar */}
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2">
+                  <svg className={`h-5 w-5 ${isExhausted ? 'text-gray-600' : 'text-red-500'}`} fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                  </svg>
+                  <span className={`text-sm font-bold ${isExhausted ? 'text-gray-700' : 'text-gray-700'}`}>
+                    {currentHP}/{maxHP} HP
+                  </span>
+                </div>
+                <div className="w-48 h-3 bg-gray-200 rounded-full overflow-hidden border-2 border-gray-300">
+                  <motion.div
+                    className={`h-full transition-all duration-300 ${
+                      isExhausted 
+                        ? 'bg-linear-to-r from-gray-600 to-gray-700' 
+                        : currentHP > 50 
+                          ? 'bg-linear-to-r from-green-500 to-emerald-500'
+                          : currentHP > 20
+                            ? 'bg-linear-to-r from-yellow-500 to-orange-500'
+                            : 'bg-linear-to-r from-red-500 to-red-600'
+                    }`}
+                    initial={{ width: '100%' }}
+                    animate={{ width: `${(currentHP / maxHP) * 100}%` }}
+                  />
+                </div>
+                {isExhausted && (
+                  <motion.span
+                    animate={{ opacity: [1, 0.5, 1] }}
+                    transition={{ duration: 1, repeat: Infinity }}
+                    className="text-xs font-bold text-red-600 uppercase tracking-wide"
+                  >
+                    ⚠️ KIỆT SỨC
+                  </motion.span>
+                )}
+              </div>
               <div className="flex items-center gap-2 rounded-full bg-blue-50 px-4 py-2">
                 <svg className="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -295,7 +380,9 @@ const QuizPage = () => {
         />
       ) : (
         /* Quiz Content */
-        <div className="mx-auto max-w-4xl px-6 py-8">`
+        <div className={`mx-auto max-w-4xl px-6 py-8 transition-all ${
+          isExhausted ? 'animate-pulse' : ''
+        }`}>
         {/* Progress Bar and Question Info */}
         <div className="mb-8">
           {/* Progress Header */}
@@ -354,7 +441,9 @@ const QuizPage = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="bg-white rounded-3xl shadow-lg p-8 mb-8"
+            className={`bg-white rounded-3xl shadow-lg p-8 mb-8 transition-all ${
+              isExhausted ? 'border-4 border-red-500 shadow-red-500/50' : ''
+            }`}
           >
             {/* Question Type Badge */}
             <div className="flex items-center gap-2 mb-6">
@@ -448,17 +537,6 @@ const QuizPage = () => {
 
         {/* Navigation Buttons */}
         <div className="flex items-center justify-between">
-          <button
-            onClick={handlePreviousQuestion}
-            disabled={currentQuestionIndex === 0}
-            className="inline-flex items-center gap-2 rounded-full border-2 border-gray-300 bg-white px-6 py-3 text-base font-semibold text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
-          >
-            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7"/>
-            </svg>
-            Previous
-          </button>
-
           {!showExplanation ? (
             <button
               onClick={handleSubmitAnswer}
