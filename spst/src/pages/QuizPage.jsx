@@ -23,6 +23,10 @@ const QuizPage = () => {
   const [totalTimeSpent, setTotalTimeSpent] = useState(0);
   const [quizStartTime] = useState(Date.now());
   const [scoreSaved, setScoreSaved] = useState(false);
+  // Combo system states
+  const [consecutiveCorrect, setConsecutiveCorrect] = useState(0);
+  const [currentCombo, setCurrentCombo] = useState(0);
+  const [maxCombo, setMaxCombo] = useState(0);
 
   const currentQuestion = gameData[currentQuestionIndex];
   const totalQuestions = gameData.length;
@@ -40,13 +44,36 @@ const QuizPage = () => {
     }
 
     const isCorrect = selectedAnswer === currentQuestion.correctAnswerIndex;
-    const pointsEarned = isCorrect ? timeLeft * 10 : 0;
+    
+    // Calculate combo
+    let newConsecutiveCorrect = isCorrect ? consecutiveCorrect + 1 : 0;
+    let comboMultiplier = 1;
+    let newCurrentCombo = 0;
+    
+    // Combo starts after 3 consecutive correct answers
+    if (newConsecutiveCorrect >= 3) {
+      newCurrentCombo = newConsecutiveCorrect - 2; // Combo 1 starts at 3rd correct answer
+      comboMultiplier = 1 + (newCurrentCombo * 0.5); // x1.5, x2, x2.5, x3, etc.
+
+    }
+    
+    // Calculate points with combo multiplier
+    const basePoints = isCorrect ? timeLeft * 10 : 0;
+    const pointsEarned = Math.floor(basePoints * comboMultiplier);
+    
+    // Update combo states
+    setConsecutiveCorrect(newConsecutiveCorrect);
+    setCurrentCombo(newCurrentCombo);
+    if (newCurrentCombo > maxCombo) {
+      setMaxCombo(newCurrentCombo);
+    }
 
     const newAnswer = {
       questionId: currentQuestion.id,
       selectedAnswer,
       isCorrect,
-      pointsEarned
+      pointsEarned,
+      comboMultiplier: newCurrentCombo > 0 ? comboMultiplier : 0
     };
     
     setUserAnswers([...userAnswers, newAnswer]);
@@ -96,7 +123,8 @@ const QuizPage = () => {
           totalScore,
           correctCount,
           totalQuestions,
-          timeSpent
+          timeSpent,
+          maxCombo
         );
         
         if (result.success) {
@@ -168,6 +196,10 @@ const QuizPage = () => {
     setQuizCompleted(false);
     setTotalTimeSpent(0);
     setScoreSaved(false);
+    // Reset combo states
+    setConsecutiveCorrect(0);
+    setCurrentCombo(0);
+    setMaxCombo(0);
   };
 
   // Result Screen
@@ -178,6 +210,7 @@ const QuizPage = () => {
         correctAnswers={correctAnswers}
         totalQuestions={totalQuestions}
         totalTimeSpent={totalTimeSpent}
+        maxCombo={maxCombo}
         onPlayAgain={handlePlayAgain}
       />
     );
@@ -207,6 +240,38 @@ const QuizPage = () => {
                 </svg>
                 <span className="text-sm font-bold text-blue-600">{score} pts</span>
               </div>
+              {/* Streak Indicator */}
+              {consecutiveCorrect > 0 && (
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  className={`flex items-center gap-2 rounded-full px-4 py-2 ${
+                    consecutiveCorrect >= 3 
+                      ? 'bg-linear-to-r from-green-500 to-emerald-500' 
+                      : 'bg-green-100'
+                  }`}
+                >
+                  <svg className={`h-5 w-5 ${consecutiveCorrect >= 3 ? 'text-white' : 'text-green-600'}`} fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className={`text-sm font-bold ${consecutiveCorrect >= 3 ? 'text-white' : 'text-green-600'}`}>
+                    {consecutiveCorrect} đúng liên tiếp
+                  </span>
+                </motion.div>
+              )}
+              {/* Combo Indicator */}
+              {currentCombo > 0 && (
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  className="flex items-center gap-2 rounded-full bg-linear-to-r from-orange-500 to-red-500 px-4 py-2 shadow-lg"
+                >
+                  <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm font-bold text-white">COMBO x{(1 + currentCombo * 0.5).toFixed(1)}</span>
+                </motion.div>
+              )}
               <div className="flex items-center gap-3">
                 <span className="text-sm font-medium text-gray-700">Student</span>
                 <div className="h-10 w-10 rounded-full bg-linear-to-br from-red-400 to-red-600 flex items-center justify-center text-white font-bold">

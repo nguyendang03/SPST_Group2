@@ -12,7 +12,7 @@ import { db } from '../config/firebase';
 
 const SCORES_COLLECTION = 'scores';
 
-export const saveScore = async (userId, userName, score, correctAnswers, totalQuestions, timeSpent) => {
+export const saveScore = async (userId, userName, score, correctAnswers, totalQuestions, timeSpent, maxCombo = 0) => {
   try {
     const docRef = await addDoc(collection(db, SCORES_COLLECTION), {
       userId,
@@ -21,6 +21,7 @@ export const saveScore = async (userId, userName, score, correctAnswers, totalQu
       correctAnswers,
       totalQuestions,
       timeSpent,
+      maxCombo,
       createdAt: serverTimestamp()
     });
     return { success: true, id: docRef.id };
