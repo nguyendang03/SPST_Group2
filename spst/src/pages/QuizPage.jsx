@@ -368,9 +368,11 @@ const QuizPage = () => {
                 </motion.div>
               )}
               <div className="flex items-center gap-3">
-                <span className="text-sm font-medium text-gray-700">Student</span>
+                <span className="text-sm font-medium text-gray-700">
+                  {user?.displayName || 'Guest'}
+                </span>
                 <div className="h-10 w-10 rounded-full bg-linear-to-br from-red-400 to-red-600 flex items-center justify-center text-white font-bold">
-                  A
+                  {(user?.displayName || 'G').charAt(0).toUpperCase()}
                 </div>
               </div>
             </div>
