@@ -89,7 +89,7 @@ const LeaderboardPage = () => {
           >
             {/* Top 3 Podium */}
             {leaderboard.length >= 3 && (
-              <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8">
+              <div className="bg-linear-to-br from-red-50 to-orange-50 p-8">
                 <div className="grid grid-cols-3 gap-4 max-w-3xl mx-auto">
                   {/* 2nd Place */}
                   <motion.div
@@ -99,7 +99,7 @@ const LeaderboardPage = () => {
                     className="flex flex-col items-center pt-8"
                   >
                     <div className="relative">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gray-300 to-gray-500 flex items-center justify-center text-white font-bold text-xl mb-2">
+                      <div className="w-16 h-16 rounded-full bg-linear-to-br from-gray-300 to-gray-500 flex items-center justify-center text-white font-bold text-xl mb-2">
                         {leaderboard[1]?.userName?.charAt(0).toUpperCase() || '?'}
                       </div>
                       <div className="absolute -bottom-2 -right-2">
@@ -122,7 +122,7 @@ const LeaderboardPage = () => {
                     className="flex flex-col items-center"
                   >
                     <div className="relative">
-                      <div className="w-20 h-20 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-600 flex items-center justify-center text-white font-bold text-2xl mb-2 ring-4 ring-yellow-200">
+                      <div className="w-20 h-20 rounded-full bg-linear-to-br from-yellow-300 to-yellow-600 flex items-center justify-center text-white font-bold text-2xl mb-2 ring-4 ring-yellow-200">
                         {leaderboard[0]?.userName?.charAt(0).toUpperCase() || '?'}
                       </div>
                       <div className="absolute -bottom-2 -right-2">
@@ -146,7 +146,7 @@ const LeaderboardPage = () => {
                     className="flex flex-col items-center pt-12"
                   >
                     <div className="relative">
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center text-white font-bold text-lg mb-2">
+                      <div className="w-14 h-14 rounded-full bg-linear-to-br from-amber-600 to-amber-800 flex items-center justify-center text-white font-bold text-lg mb-2">
                         {leaderboard[2]?.userName?.charAt(0).toUpperCase() || '?'}
                       </div>
                       <div className="absolute -bottom-2 -right-2">
@@ -209,7 +209,7 @@ const LeaderboardPage = () => {
                       {/* Player Name */}
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center text-white font-bold">
+                          <div className="w-10 h-10 rounded-full bg-linear-to-br from-red-400 to-red-600 flex items-center justify-center text-white font-bold">
                             {entry.userName?.charAt(0).toUpperCase() || '?'}
                           </div>
                           <span className="font-medium text-gray-900">{entry.userName || 'Anonymous'}</span>

@@ -66,7 +66,7 @@ const Header = () => {
                   onClick={() => setUserMenuOpen(!userMenuOpen)}
                   className="relative"
                 >
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center text-white font-bold cursor-pointer hover:from-red-500 hover:to-red-700 transition-all">
+                  <div className="h-10 w-10 rounded-full bg-linear-to-br from-red-400 to-red-600 flex items-center justify-center text-white font-bold cursor-pointer hover:from-red-500 hover:to-red-700 transition-all">
                     {(user.displayName || 'U').charAt(0).toUpperCase()}
                   </div>
                 </button>
