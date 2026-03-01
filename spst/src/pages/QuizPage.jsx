@@ -42,12 +42,17 @@ const QuizPage = () => {
     const isCorrect = selectedAnswer === currentQuestion.correctAnswerIndex;
     const pointsEarned = isCorrect ? timeLeft * 10 : 0;
 
-    setUserAnswers([...userAnswers, {
+    const newAnswer = {
       questionId: currentQuestion.id,
       selectedAnswer,
       isCorrect,
       pointsEarned
-    }]);
+    };
+    
+    setUserAnswers([...userAnswers, newAnswer]);
+
+    // Update total score
+    setScore(score + pointsEarned);
 
     setLastAnswerCorrect(isCorrect);
     setShowExplanation(true);
@@ -63,19 +68,32 @@ const QuizPage = () => {
       setTotalTimeSpent(timeSpent);
       setQuizCompleted(true);
       
-      // Save score to Firestore if user is logged in
-      const correctCount = [...userAnswers, {
-        questionId: currentQuestion.id,
-        selectedAnswer,
-        isCorrect: selectedAnswer === currentQuestion.correctAnswerIndex,
-        pointsEarned: selectedAnswer === currentQuestion.correctAnswerIndex ? timeLeft * 10 : 0
-      }].filter(a => a.isCorrect).length;
+      // Calculate final results from all answers
+      // Check if the last answer is already in userAnswers
+      let allAnswers = [...userAnswers];
       
+      // If last answer not yet in userAnswers (due to async setState), add it
+      if (allAnswers.length < totalQuestions) {
+        allAnswers.push({
+          questionId: currentQuestion.id,
+          selectedAnswer,
+          isCorrect: selectedAnswer === currentQuestion.correctAnswerIndex,
+          pointsEarned: selectedAnswer === currentQuestion.correctAnswerIndex ? timeLeft * 10 : 0
+        });
+      }
+      
+      const totalScore = allAnswers.reduce((sum, answer) => sum + answer.pointsEarned, 0);
+      const correctCount = allAnswers.filter(a => a.isCorrect).length;
+      
+      // Update score state with final total
+      setScore(totalScore);
+      
+      // Save score to Firestore if user is logged in
       if (user) {
         const result = await saveScore(
           user.uid,
           user.displayName || 'Anonymous',
-          score,
+          totalScore,
           correctCount,
           totalQuestions,
           timeSpent
@@ -91,7 +109,7 @@ const QuizPage = () => {
       
       toast.success('Hoàn thành bài quiz!');
     }
-  }, [currentQuestionIndex, totalQuestions, quizStartTime, userAnswers, currentQuestion, selectedAnswer, timeLeft, user, score]);
+  }, [currentQuestionIndex, totalQuestions, quizStartTime, userAnswers, currentQuestion, selectedAnswer, timeLeft, user]);
   
   // Timer countdown
   useEffect(() => {

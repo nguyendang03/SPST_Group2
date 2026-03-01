@@ -17,11 +17,27 @@ const LeaderboardPage = () => {
 
   const fetchLeaderboard = async () => {
     setLoading(true);
-    const result = await getLeaderboard(20);
+    const result = await getLeaderboard(100); // Lấy nhiều hơn để filter
     setLoading(false);
 
     if (result.success) {
-      setLeaderboard(result.leaderboard);
+      // Chỉ giữ lại điểm cao nhất của mỗi người chơi
+      const userBestScores = new Map();
+      
+      for (const entry of result.leaderboard) {
+        // Nếu user chưa có trong Map, hoặc điểm hiện tại cao hơn điểm đã lưu
+        if (!userBestScores.has(entry.userId) || 
+            entry.score > userBestScores.get(entry.userId).score) {
+          userBestScores.set(entry.userId, entry);
+        }
+      }
+      
+      // Chuyển Map thành array, sắp xếp theo điểm giảm dần, lấy top 20
+      const uniqueLeaderboard = Array.from(userBestScores.values())
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 20);
+      
+      setLeaderboard(uniqueLeaderboard);
     } else {
       toast.error('Không thể tải bảng xếp hạng');
     }
