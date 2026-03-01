@@ -11,6 +11,14 @@ import { saveScore } from '../services/scoreService';
 const QuizPage = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
+  
+  // Function to shuffle and select random questions
+  const shuffleQuestions = () => {
+    const shuffled = [...gameData].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 20); // Get first 20 questions after shuffle
+  };
+  
+  const [shuffledQuestions, setShuffledQuestions] = useState(() => shuffleQuestions());
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
@@ -33,8 +41,8 @@ const QuizPage = () => {
   const maxHP = 100;
   const [isExhausted, setIsExhausted] = useState(false);
 
-  const currentQuestion = gameData[currentQuestionIndex];
-  const totalQuestions = gameData.length;
+  const currentQuestion = shuffledQuestions[currentQuestionIndex];
+  const totalQuestions = shuffledQuestions.length;
 
   const handleAnswerSelect = (index) => {
     if (!showExplanation) {
@@ -233,6 +241,8 @@ const QuizPage = () => {
   const totalTimeSeconds = totalTimeSpent % 60;
 
   const handlePlayAgain = () => {
+    // Shuffle and get new set of 20 questions
+    setShuffledQuestions(shuffleQuestions());
     setCurrentQuestionIndex(0);
     setSelectedAnswer(null);
     setScore(0);

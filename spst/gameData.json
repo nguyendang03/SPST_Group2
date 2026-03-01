@@ -1,242 +1,902 @@
 [
   {
     "id": 1,
-    "question": "Sự thay thế hình thái kinh tế - xã hội tư bản chủ nghĩa bằng hình thái kinh tế - xã hội cộng sản chủ nghĩa được thực hiện thông qua:",
+    "question": "Theo giáo trình, Chủ nghĩa xã hội được tiếp cận từ mấy góc độ cơ bản?",
     "options": [
-      "Cải cách xã hội",
-      "Tiến hóa xã hội",
-      "Cách mạng xã hội chủ nghĩa",
-      "Thỏa hiệp giai cấp"
+      "2 góc độ",
+      "3 góc độ",
+      "4 góc độ",
+      "5 góc độ"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Theo học thuyết Mác - Lênin, sự thay thế này là một quá trình lịch sử tự nhiên, nhưng phải được thực hiện thông qua cách mạng xã hội chủ nghĩa để giải quyết mâu thuẫn đối kháng về lợi ích giai cấp."
+    "explanation": "Chủ nghĩa xã hội được tiếp cận từ 4 góc độ: phong trào thực tiễn, trào lưu tư tưởng, một khoa học, và một chế độ xã hội."
   },
   {
     "id": 2,
-    "question": "Ai là người đầu tiên đưa ra khái niệm 'thời kỳ quá độ từ chủ nghĩa tư bản lên chủ nghĩa cộng sản' một cách khoa học?",
+    "question": "Dưới góc độ là một phong trào thực tiễn, chủ nghĩa xã hội là phong trào đấu tranh của ai?",
     "options": [
-      "C. Mác",
-      "Ph. Ăngghen",
-      "V.I. Lênin",
-      "Hồ Chí Minh"
+      "Của giai cấp tư sản chống lại phong kiến",
+      "Của nhân dân lao động chống lại áp bức, bất công",
+      "Của các nhà khoa học chống lại thần học",
+      "Của tầng lớp trí thức bảo vệ quyền lợi"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Trong tác phẩm 'Phê phán Cương lĩnh Gôta' (1875), C. Mác đã khẳng định giữa xã hội TBCN và CSCN là một thời kỳ cải biến cách mạng, tương ứng với nó là một thời kỳ quá độ chính trị."
+    "correctAnswerIndex": 1,
+    "explanation": "Là phong trào thực tiễn, CNXH là phong trào đấu tranh của nhân dân lao động chống lại áp bức, bất công, chống các giai cấp thống trị."
   },
   {
     "id": 3,
-    "question": "Điều kiện kinh tế chủ yếu nhất dẫn đến sự ra đời của chủ nghĩa xã hội là gì?",
+    "question": "Dưới góc độ là một khoa học, Chủ nghĩa xã hội khoa học nghiên cứu về vấn đề cốt lõi nào?",
     "options": [
-      "Sự phát triển của nền sản xuất hàng hóa nhỏ",
-      "Sự bóc lột tàn dư của chế độ phong kiến",
-      "Sự bần cùng hóa của giai cấp công nhân",
-      "Lực lượng sản xuất phát triển với tính xã hội hóa cao"
+      "Quy luật giá trị thặng dư",
+      "Phép biện chứng duy vật",
+      "Sứ mệnh lịch sử của giai cấp công nhân",
+      "Quy luật cung cầu của thị trường"
     ],
-    "correctAnswerIndex": 3,
-    "explanation": "Sự phát triển mạnh mẽ của đại công nghiệp cơ khí làm lực lượng sản xuất mang tính xã hội hóa cao, dẫn tới mâu thuẫn gay gắt với quan hệ sản xuất chiếm hữu tư nhân tư bản chủ nghĩa."
+    "correctAnswerIndex": 2,
+    "explanation": "Là một khoa học, chủ nghĩa xã hội khoa học là khoa học nghiên cứu về sứ mệnh lịch sử của giai cấp công nhân."
   },
   {
     "id": 4,
-    "question": "Đặc trưng về mặt chính trị của chủ nghĩa xã hội là gì?",
+    "question": "Dưới góc độ là một chế độ xã hội, Chủ nghĩa xã hội được hiểu là gì?",
     "options": [
-      "Nhà nước quản lý hoàn toàn nền kinh tế",
-      "Chế độ xã hội do nhân dân lao động làm chủ",
-      "Xóa bỏ hoàn toàn bộ máy nhà nước ngay lập tức",
-      "Thực hiện chế độ đa nguyên chính trị"
+      "Giai đoạn cuối cùng của hình thái kinh tế - xã hội tư bản chủ nghĩa",
+      "Giai đoạn đầu của hình thái kinh tế - xã hội cộng sản chủ nghĩa",
+      "Một hình thái kinh tế - xã hội độc lập",
+      "Giai đoạn cao của hình thái kinh tế - xã hội cộng sản chủ nghĩa"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Chủ nghĩa xã hội thiết lập một nền dân chủ rộng rãi, nơi nhân dân lao động là chủ thể của xã hội và quyền lực nhà nước thuộc về nhân dân."
+    "explanation": "Là một chế độ xã hội tốt đẹp, CNXH được xác định là giai đoạn đầu của hình thái kinh tế - xã hội cộng sản chủ nghĩa."
   },
   {
     "id": 5,
-    "question": "Chủ nghĩa xã hội có nền kinh tế phát triển cao dựa trên yếu tố cốt lõi nào?",
+    "question": "Ai là người đã xây dựng nên học thuyết về hình thái kinh tế - xã hội?",
     "options": [
-      "Chế độ sở hữu tư nhân về tư liệu sản xuất",
-      "Nền kinh tế tự cấp tự túc",
-      "Lực lượng sản xuất hiện đại và chế độ công hữu về tư liệu sản xuất chủ yếu",
-      "Sự phân công lao động xã hội quốc tế"
+      "C. Mác và Ph. Ăngghen",
+      "V.I. Lênin",
+      "Hồ Chí Minh",
+      "Ph. Hêghen và L. Phoiơbắc"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "Chế độ công hữu về tư liệu sản xuất chủ yếu là nền tảng kinh tế giải quyết triệt để sự bóc lột của chủ nghĩa tư bản, đảm bảo lợi ích thuộc về người lao động."
+    "correctAnswerIndex": 0,
+    "explanation": "Các nhà sáng lập chủ nghĩa xã hội khoa học C. Mác và Ph. Ăngghen khi nghiên cứu lịch sử phát triển của xã hội loài người đã xây dựng nên học thuyết này."
   },
   {
     "id": 6,
-    "question": "Có mấy hình thức quá độ lên chủ nghĩa xã hội?",
+    "question": "Sự thay thế hình thái kinh tế - xã hội tư bản chủ nghĩa bằng hình thái kinh tế - xã hội cộng sản chủ nghĩa mang tính chất gì?",
     "options": [
-      "1 hình thức (Trực tiếp)",
-      "2 hình thức (Trực tiếp và Gián tiếp)",
-      "3 hình thức",
-      "Nhiều hình thức tùy thuộc vào mỗi quốc gia"
+      "Là một quá trình ngẫu nhiên",
+      "Là một quá trình phụ thuộc vào ý muốn chủ quan",
+      "Là một quá trình lịch sử - tự nhiên",
+      "Là một quá trình tiến hóa hòa bình"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Về mặt lý luận, có quá độ trực tiếp (từ các nước tư bản chủ nghĩa phát triển) và quá độ gián tiếp (từ các nước chưa trải qua chủ nghĩa tư bản phát triển)."
+    "correctAnswerIndex": 2,
+    "explanation": "Học thuyết hình thái kinh tế - xã hội chỉ ra tính tất yếu sự thay thế HTKT-XH tư bản chủ nghĩa bằng cộng sản chủ nghĩa là quá trình lịch sử - tự nhiên."
   },
   {
     "id": 7,
-    "question": "Thời kỳ quá độ lên chủ nghĩa xã hội bắt đầu từ khi nào?",
+    "question": "Sự thay thế hình thái kinh tế - xã hội tư bản chủ nghĩa bằng cộng sản chủ nghĩa được thực hiện thông qua con đường nào?",
     "options": [
-      "Khi Đảng Cộng sản được thành lập",
-      "Khi giai cấp công nhân và nhân dân lao động giành được chính quyền",
-      "Khi xây dựng xong cơ sở vật chất của chủ nghĩa xã hội",
-      "Khi hoàn thành công nghiệp hóa đất nước"
+      "Cải cách kinh tế",
+      "Cách mạng tư sản",
+      "Cách mạng xã hội chủ nghĩa",
+      "Thỏa hiệp chính trị"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Việc thiết lập chuyên chính vô sản (giành chính quyền) là cột mốc đánh dấu sự bắt đầu của thời kỳ quá độ để tiến hành cải tạo xã hội cũ, xây dựng xã hội mới."
+    "correctAnswerIndex": 2,
+    "explanation": "Sự thay thế này không diễn ra tự phát mà phải được thực hiện thông qua cách mạng xã hội chủ nghĩa."
   },
   {
     "id": 8,
-    "question": "Đặc điểm nổi bật nhất của thời kỳ quá độ lên chủ nghĩa xã hội là gì?",
+    "question": "Hai tiền đề vật chất quan trọng nhất cho sự thay thế chủ nghĩa tư bản là gì?",
     "options": [
-      "Nền kinh tế chỉ còn duy nhất thành phần kinh tế nhà nước",
-      "Sự tồn tại đan xen và đấu tranh trên tất cả các lĩnh vực giữa yếu tố mới và tàn dư cũ",
-      "Không còn đấu tranh giai cấp",
-      "Xóa bỏ hoàn toàn sự chênh lệch giàu nghèo"
+      "Sự phát triển của lực lượng sản xuất và sự trưởng thành của giai cấp công nhân",
+      "Sự phát triển của văn hóa và sự ra đời của nhà nước",
+      "Sự ra đời của máy móc và sự mở rộng thị trường",
+      "Sự sụp đổ của phong kiến và sự ra đời của giai cấp tư sản"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Thời kỳ quá độ là một xã hội 'chưa hoàn toàn là cộng sản chủ nghĩa, cũng không còn hoàn toàn là tư bản chủ nghĩa', do đó sự đan xen và đấu tranh giữa cái cũ và cái mới là tất yếu."
+    "correctAnswerIndex": 0,
+    "explanation": "Cách mạng XHCN xuất phát từ hai tiền đề vật chất quan trọng nhất là sự phát triển của lực lượng sản xuất và sự trưởng thành của giai cấp công nhân."
   },
   {
     "id": 9,
-    "question": "Mục tiêu cao nhất và cuối cùng của chủ nghĩa xã hội là gì?",
+    "question": "Theo C. Mác và Ph. Ăngghen, hình thái kinh tế - xã hội cộng sản chủ nghĩa phát triển qua mấy giai đoạn?",
     "options": [
-      "Phát triển kinh tế, trở thành siêu cường thế giới",
-      "Giải phóng con người, tạo điều kiện để con người phát triển toàn diện",
-      "Xây dựng quân đội và quốc phòng vững mạnh",
-      "Xóa bỏ tiền tệ và nhà nước"
+      "Một giai đoạn duy nhất",
+      "Hai giai đoạn (thấp và cao)",
+      "Ba giai đoạn",
+      "Bốn giai đoạn"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Bản chất nhân văn sâu sắc của CNXH là giải phóng con người khỏi mọi sự áp bức, bóc lột, tha hóa, mang lại cuộc sống tự do, ấm no, hạnh phúc."
+    "explanation": "Hình thái KT-XH cộng sản chủ nghĩa phát triển từ thấp lên cao qua hai giai đoạn: giai đoạn thấp (CNXH) và giai đoạn cao (CNCS)."
   },
   {
     "id": 10,
-    "question": "Trong thời kỳ quá độ, trên lĩnh vực kinh tế có đặc điểm gì?",
+    "question": "Trong tác phẩm Phê phán cương lĩnh Gôta, C. Mác khẳng định giữa xã hội TBCN và CSCN là một thời kỳ cải biến cách mạng. Thời kỳ đó gọi là gì?",
     "options": [
-      "Tồn tại nền kinh tế nhiều thành phần",
-      "Chỉ tồn tại kinh tế nhà nước và tập thể",
-      "Hoàn toàn là kinh tế thị trường tự do tư bản",
-      "Xóa bỏ hoàn toàn thị trường hàng hóa"
+      "Thời kỳ bùng nổ dân số",
+      "Thời kỳ quá độ chính trị",
+      "Thời kỳ công nghiệp hóa",
+      "Thời kỳ khủng hoảng kinh tế"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Do lực lượng sản xuất chưa phát triển đồng đều, thời kỳ quá độ bắt buộc phải duy trì nền kinh tế nhiều thành phần (kể cả thành phần kinh tế tư nhân tư bản) để phát triển sản xuất."
+    "correctAnswerIndex": 1,
+    "explanation": "C. Mác cho rằng thích ứng với thời kỳ cải biến cách mạng ấy là một thời kỳ quá độ chính trị."
   },
   {
     "id": 11,
-    "question": "Quá độ lên chủ nghĩa xã hội bỏ qua chế độ tư bản chủ nghĩa (như ở Việt Nam) được hiểu là bỏ qua điều gì?",
+    "question": "Nhà nước trong thời kỳ quá độ chính trị từ CNTB lên CNCS mang bản chất gì?",
     "options": [
-      "Bỏ qua mọi thành tựu của văn minh nhân loại đạt được dưới thời tư bản",
-      "Bỏ qua sự phát triển của nền sản xuất hàng hóa",
-      "Bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa",
-      "Bỏ qua giai đoạn công nghiệp hóa"
+      "Nền chuyên chính của giai cấp tư sản",
+      "Nền chuyên chính cách mạng của giai cấp vô sản",
+      "Nhà nước toàn dân",
+      "Nhà nước liên minh tư sản và vô sản"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "Bỏ qua chế độ TBCN không phải là phủ sạch trơn, mà là không để cho quan hệ bóc lột tư bản chủ nghĩa và kiến trúc thượng tầng của nó giữ vị trí thống trị xã hội."
+    "correctAnswerIndex": 1,
+    "explanation": "Theo C. Mác, nhà nước của thời kỳ ấy không thể là cái gì khác hơn là nền chuyên chính cách mạng của giai cấp vô sản."
   },
   {
     "id": 12,
-    "question": "Nhà nước chuyên chính vô sản trong thời kỳ quá độ mang bản chất của giai cấp nào?",
+    "question": "Theo C. Mác, xã hội trong thời kỳ quá độ mang đặc điểm gì nổi bật?",
     "options": [
-      "Giai cấp nông dân",
-      "Tầng lớp trí thức",
-      "Liên minh công - nông - trí thức",
-      "Giai cấp công nhân"
+      "Đã phát triển hoàn thiện trên cơ sở của chính nó",
+      "Vừa thoát thai từ xã hội TBCN, còn mang nhiều dấu vết của xã hội cũ",
+      "Hoàn toàn không còn tàn dư của xã hội cũ",
+      "Là một xã hội không có nhà nước và pháp luật"
     ],
-    "correctAnswerIndex": 3,
-    "explanation": "Nhà nước này do Đảng của giai cấp công nhân lãnh đạo, đại diện cho ý chí và quyền lợi của giai cấp công nhân và nhân dân lao động."
+    "correctAnswerIndex": 1,
+    "explanation": "Đây là xã hội chưa phát triển trên cơ sở của chính nó, vừa thoát thai từ xã hội TBCN nên về mọi phương diện vẫn còn mang dấu vết của xã hội cũ."
   },
   {
     "id": 13,
-    "question": "Hình thái kinh tế - xã hội cộng sản chủ nghĩa phát triển qua các giai đoạn nào?",
+    "question": "Theo V.I. Lênin, đối với những nước chưa có chủ nghĩa tư bản phát triển cao, thời kỳ quá độ lên chủ nghĩa xã hội sẽ diễn ra như thế nào?",
     "options": [
-      "Thời kỳ quá độ và Chủ nghĩa cộng sản",
-      "Chủ nghĩa xã hội (giai đoạn thấp) và Chủ nghĩa cộng sản (giai đoạn cao)",
-      "Chủ nghĩa tư bản, Chủ nghĩa xã hội và Chủ nghĩa cộng sản",
-      "Chỉ có một giai đoạn duy nhất"
+      "Rất ngắn và dễ dàng",
+      "Không cần thiết phải trải qua",
+      "Khá lâu dài",
+      "Chỉ diễn ra trong lĩnh vực chính trị"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Theo C. Mác, bản thân hình thái kinh tế - xã hội cộng sản chủ nghĩa chia làm hai giai đoạn từ thấp đến cao (CNXH và CNCS). Thời kỳ quá độ là bước chuẩn bị để bước vào giai đoạn thấp."
+    "correctAnswerIndex": 2,
+    "explanation": "V.I. Lênin khẳng định đối với những nước này 'cần phải có một thời kỳ quá độ khá lâu dài từ chủ nghĩa tư bản lên chủ nghĩa xã hội'."
   },
   {
     "id": 14,
-    "question": "V.I. Lênin đã phát triển học thuyết của Mác về sự ra đời của CNXH thông qua phát hiện nào?",
+    "question": "Theo V.I. Lênin, chủ nghĩa cộng sản hình thành và phát triển lên từ đâu?",
     "options": [
-      "CNXH chỉ có thể thắng lợi cùng một lúc ở tất cả các nước tư bản phát triển nhất",
-      "CNXH có thể thắng lợi ở một số nước, thậm chí một nước riêng lẻ (khâu yếu nhất của CNTB)",
-      "Cách mạng vô sản không cần dùng bạo lực",
-      "Có thể xây dựng CNXH mà không cần chuyên chính vô sản"
+      "Từ chủ nghĩa phong kiến",
+      "Từ chủ nghĩa tư bản",
+      "Từ chủ nghĩa xã hội không tưởng",
+      "Từ xã hội nguyên thủy"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Dựa trên quy luật phát triển không đều của CNTB trong thời đại đế quốc chủ nghĩa, Lênin kết luận cách mạng vô sản có thể nổ ra và thắng lợi ở nơi là mắt xích yếu nhất của sợi dây chuyền tư bản."
+    "explanation": "V.I. Lênin cho rằng C. Mác xuất phát từ chỗ là chủ nghĩa cộng sản hình thành từ chủ nghĩa tư bản, phát triển lên từ chủ nghĩa tư bản."
   },
   {
     "id": 15,
-    "question": "Nhiệm vụ trọng tâm, xuyên suốt nhất về mặt kinh tế của thời kỳ quá độ lên chủ nghĩa xã hội ở các nước kém phát triển là gì?",
+    "question": "Lực lượng xã hội nào do chủ nghĩa tư bản sinh ra đóng vai trò quyết định trong việc hình thành chủ nghĩa cộng sản?",
     "options": [
-      "Quốc hữu hóa toàn bộ tài sản",
-      "Xóa bỏ kinh tế thị trường",
-      "Tiến hành công nghiệp hóa, hiện đại hóa để xây dựng cơ sở vật chất - kỹ thuật",
-      "Mở rộng khai thác tài nguyên thiên nhiên"
+      "Giai cấp nông dân",
+      "Tầng lớp trí thức",
+      "Giai cấp vô sản (công nhân hiện đại)",
+      "Giai cấp tư sản dân tộc"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Cơ sở vật chất của CNXH là nền đại công nghiệp. Các nước đi lên từ nông nghiệp lạc hậu bắt buộc phải tiến hành công nghiệp hóa, hiện đại hóa."
+    "explanation": "Sự hình thành CNCS là kết quả tác động của một lực lượng xã hội do CNTB sinh ra: giai cấp vô sản, giai cấp công nhân hiện đại."
   },
   {
     "id": 16,
-    "question": "Trong thời kỳ quá độ, đặc điểm trên lĩnh vực văn hóa - tư tưởng là:",
+    "question": "Sự ra đời của chủ nghĩa xã hội theo chủ nghĩa Mác - Lênin có mấy điều kiện chủ yếu?",
     "options": [
-      "Hệ tư tưởng tư sản chiếm ưu thế tuyệt đối",
-      "Văn hóa truyền thống bị loại bỏ hoàn toàn",
-      "Tồn tại nhiều tư tưởng, văn hóa khác nhau, có sự đấu tranh giữa văn hóa mới và tàn dư văn hóa cũ",
-      "Mọi người dân đều lập tức có ý thức giác ngộ xã hội chủ nghĩa"
+      "1 điều kiện",
+      "2 điều kiện",
+      "3 điều kiện",
+      "4 điều kiện"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "Văn hóa cũ và thói quen cũ không tự động mất đi. Việc xây dựng nền văn hóa mới XHCN là một quá trình đấu tranh lâu dài, gian khổ trên mặt trận tư tưởng."
+    "correctAnswerIndex": 1,
+    "explanation": "Sự ra đời của chủ nghĩa xã hội có 2 điều kiện chủ yếu: Điều kiện kinh tế và Điều kiện chính trị - xã hội."
   },
   {
     "id": 17,
-    "question": "Yếu tố nào đóng vai trò lãnh đạo, đảm bảo cho sự thắng lợi của thời kỳ quá độ lên chủ nghĩa xã hội?",
+    "question": "Biểu hiện tập trung nhất cho bước phát triển vượt bậc của lực lượng sản xuất dưới chủ nghĩa tư bản là gì?",
     "options": [
-      "Tầng lớp tư sản dân tộc",
-      "Các tổ chức nghiệp đoàn, công đoàn độc lập",
-      "Đảng Cộng sản - đội tiên phong của giai cấp công nhân",
-      "Lực lượng vũ trang nhân dân"
+      "Sự mở rộng thương mại quốc tế",
+      "Sự ra đời của công nghiệp cơ khí",
+      "Sự tích lũy tư bản nguyên thủy",
+      "Sự phát triển của nông nghiệp"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "Sự lãnh đạo của Đảng Cộng sản là nhân tố quyết định, định hướng đường lối và tổ chức quần chúng nhân dân thực hiện công cuộc cải tạo và xây dựng xã hội mới."
+    "correctAnswerIndex": 1,
+    "explanation": "Nhờ bước tiến to lớn của LLSX, biểu hiện tập trung nhất là sự ra đời của công nghiệp cơ khí (Cách mạng công nghiệp lần thứ hai)."
   },
   {
     "id": 18,
-    "question": "Đặc trưng nào sau đây KHÔNG thuộc về chủ nghĩa xã hội?",
+    "question": "Mâu thuẫn kinh tế cơ bản của phương thức sản xuất tư bản chủ nghĩa là gì?",
     "options": [
-      "Giải phóng giai cấp, dân tộc, xã hội và con người",
-      "Bảo đảm bình đẳng, đoàn kết giữa các dân tộc",
-      "Nhà nước là công cụ thống trị của thiểu số đối với đa số",
-      "Có nền văn hóa phát triển cao"
+      "Giữa sản xuất nông nghiệp và công nghiệp",
+      "Giữa lực lượng sản xuất mang tính xã hội hóa cao với chế độ chiếm hữu tư nhân TBCN",
+      "Giữa các nhà tư bản với nhau trong cạnh tranh",
+      "Giữa các nước đế quốc"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "Trong CNXH, nhà nước mang bản chất giai cấp công nhân, đại biểu cho lợi ích và ý chí của đại đa số nhân dân lao động, trái ngược với nhà nước bóc lột của thiểu số."
+    "correctAnswerIndex": 1,
+    "explanation": "LLSX càng được cơ khí hóa, mang tính xã hội hóa cao thì càng mâu thuẫn gay gắt với quan hệ sản xuất dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa."
   },
   {
     "id": 19,
-    "question": "Mâu thuẫn cơ bản nhất trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam hiện nay là mâu thuẫn giữa:",
+    "question": "Dưới chủ nghĩa tư bản, quan hệ sản xuất từ chỗ mở đường cho lực lượng sản xuất phát triển đã biến thành gì?",
     "options": [
-      "Giai cấp công nhân và giai cấp nông dân",
-      "Yêu cầu phát triển cao của đất nước và tình trạng kinh tế - xã hội còn tụt hậu",
-      "Kinh tế nhà nước và kinh tế tư nhân",
-      "Văn hóa phương Đông và văn hóa phương Tây"
+      "Động lực thúc đẩy nền kinh tế",
+      "Cơ sở của tiến bộ khoa học",
+      "Xiềng xích của lực lượng sản xuất",
+      "Điều kiện giải phóng con người"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Đây là mâu thuẫn khách quan lớn nhất. Để giải quyết, Việt Nam phải không ngừng đổi mới, đẩy mạnh CNH-HĐH và phát triển kinh tế thị trường định hướng XHCN."
+    "correctAnswerIndex": 2,
+    "explanation": "C. Mác và Ph. Ăngghen chỉ rõ quan hệ sản xuất ngày càng trở nên lỗi thời, biến thành xiềng xích của lực lượng sản xuất."
   },
   {
     "id": 20,
-    "question": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (Bổ sung, phát triển năm 2011) của Đảng ta xác định mô hình CNXH ở Việt Nam có bao nhiêu đặc trưng?",
+    "question": "Về mặt xã hội, mâu thuẫn kinh tế cơ bản của chủ nghĩa tư bản biểu hiện thành mâu thuẫn giữa hai giai cấp nào?",
     "options": [
-      "6 đặc trưng",
-      "7 đặc trưng",
-      "8 đặc trưng",
-      "9 đặc trưng"
+      "Giai cấp công nhân hiện đại với giai cấp tư sản lỗi thời",
+      "Giai cấp nông dân với giai cấp địa chủ",
+      "Giai cấp vô sản với giai cấp nông dân",
+      "Giai cấp tư sản với tầng lớp tiểu tư sản"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Mâu thuẫn kinh tế biểu hiện về mặt xã hội là mâu thuẫn đối kháng giữa giai cấp công nhân hiện đại với giai cấp tư sản lỗi thời."
+  },
+  {
+    "id": 21,
+    "question": "Giai cấp tư sản không chỉ tạo ra vũ khí sẽ giết mình (nền đại công nghiệp) mà còn tạo ra ai?",
+    "options": [
+      "Những nhà tư bản mới",
+      "Những người vô sản (công nhân hiện đại)",
+      "Những người tiểu nông",
+      "Bộ máy nhà nước quan liêu"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "C. Mác và Ph. Ăngghen cho rằng giai cấp tư sản còn tạo ra những người sử dụng vũ khí đó để tiêu diệt CNTB: những công nhân hiện đại, những người vô sản."
+  },
+  {
+    "id": 22,
+    "question": "Sự trưởng thành vượt bậc của giai cấp công nhân được đánh dấu bằng sự kiện gì?",
+    "options": [
+      "Sự ra đời của tổ chức Công đoàn",
+      "Sự ra đời của Đảng Cộng sản",
+      "Khi nổ ra các cuộc đình công lớn",
+      "Khi có quyền bầu cử"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Sự trưởng thành vượt bậc của giai cấp công nhân được đánh dấu bằng sự ra đời của Đảng Cộng sản, đội tiền phong của giai cấp công nhân."
+  },
+  {
+    "id": 23,
+    "question": "Hình thái kinh tế - xã hội cộng sản chủ nghĩa có tự nhiên ra đời không?",
+    "options": [
+      "Có, do quy luật tiến hóa tự nhiên",
+      "Có, sự sụp đổ của CNTB sẽ tự động tạo ra CNCS",
+      "Không, nó chỉ được hình thành thông qua cách mạng vô sản",
+      "Không, nó ra đời nhờ sự thỏa hiệp giai cấp"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Đó là 8 đặc trưng, bao quát toàn diện các lĩnh vực: mục tiêu chung, kinh tế, chính trị, văn hóa, con người, dân tộc, nhà nước pháp quyền và quan hệ quốc tế."
+    "explanation": "Nó không tự nhiên ra đời, trái lại, nó chỉ được hình thành thông qua cách mạng vô sản dưới sự lãnh đạo của Đảng Cộng sản."
+  },
+  {
+    "id": 24,
+    "question": "Trên thực tế, cách mạng vô sản chủ yếu được thực hiện bằng con đường nào?",
+    "options": [
+      "Bạo lực cách mạng",
+      "Đấu tranh nghị viện",
+      "Cải cách kinh tế ôn hòa",
+      "Đàm phán ngoại giao"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Trên thực tế, cách mạng vô sản được thực hiện bằng con đường bạo lực cách mạng nhằm lật đổ chế độ TBCN, thiết lập chuyên chính vô sản."
+  },
+  {
+    "id": 25,
+    "question": "Về mặt lý thuyết, cách mạng vô sản bằng con đường hòa bình có dễ xảy ra không?",
+    "options": [
+      "Rất phổ biến",
+      "Luôn luôn xảy ra ở các nước phát triển",
+      "Vô cùng hiếm, quý và trên thực tế chưa xảy ra",
+      "Chỉ xảy ra ở các nước nông nghiệp"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Cách mạng vô sản bằng con đường hòa bình vô cùng hiếm, quý và trên thực tế chưa từng xảy ra thành công trọn vẹn."
+  },
+  {
+    "id": 26,
+    "question": "Chủ nghĩa xã hội có bao nhiêu đặc trưng bản chất cơ bản theo C. Mác, Ph. Ăngghen và V.I. Lênin?",
+    "options": [
+      "4 đặc trưng",
+      "5 đặc trưng",
+      "6 đặc trưng",
+      "7 đặc trưng"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Dựa trên quan điểm của các nhà kinh điển, giáo trình khái quát 6 đặc trưng cơ bản của chủ nghĩa xã hội."
+  },
+  {
+    "id": 27,
+    "question": "Mục tiêu tổng quát và cao nhất của chủ nghĩa xã hội là gì?",
+    "options": [
+      "Phát triển kinh tế thị trường tự do",
+      "Mở rộng lãnh thổ",
+      "Giải phóng giai cấp, dân tộc, xã hội, con người",
+      "Xây dựng quân đội hiện đại"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Đặc trưng đầu tiên: Chủ nghĩa xã hội giải phóng giai cấp, giải phóng dân tộc, giải phóng xã hội, giải phóng con người, tạo điều kiện phát triển toàn diện."
+  },
+  {
+    "id": 28,
+    "question": "Theo Tuyên ngôn của Đảng Cộng sản, sự phát triển tự do của mỗi người là điều kiện cho điều gì?",
+    "options": [
+      "Sự giàu có của xã hội",
+      "Sự thống trị của giai cấp vô sản",
+      "Sự phát triển tự do của tất cả mọi người",
+      "Sự cạnh tranh công bằng"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "C. Mác và Ph. Ăngghen khẳng định: '...trong đó sự phát triển tự do của mỗi người là điều kiện của sự phát triển tự do của tất cả mọi người'."
+  },
+  {
+    "id": 29,
+    "question": "Để giải phóng dân tộc, C. Mác và Ph. Ăngghen cho rằng trước hết phải xóa bỏ điều gì?",
+    "options": [
+      "Đường biên giới quốc gia",
+      "Tình trạng người bóc lột người",
+      "Giao thương quốc tế",
+      "Văn hóa truyền thống"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Khi tình trạng người bóc lột người bị xóa bỏ thì 'tình trạng dân tộc này bóc lột dân tộc khác cũng sẽ bị xóa bỏ'."
+  },
+  {
+    "id": 30,
+    "question": "Theo V.I. Lênin, nguyên tắc phân phối cuối cùng mà chủ nghĩa cộng sản hướng tới là gì?",
+    "options": [
+      "Làm theo năng lực, hưởng theo lao động",
+      "Làm theo năng lực, hưởng theo nhu cầu",
+      "Phân phối bình quân cho mọi người",
+      "Phân phối theo nguồn vốn đóng góp"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Mục đích cao nhất của cải tạo XHCN là tiến tới thực hiện nguyên tắc: làm theo năng lực, hưởng theo nhu cầu."
+  },
+  {
+    "id": 31,
+    "question": "Mục đích cao cả của chủ nghĩa xã hội là xóa bỏ sự phân chia xã hội thành cái gì?",
+    "options": [
+      "Giai cấp",
+      "Tôn giáo",
+      "Nghề nghiệp",
+      "Quốc gia"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "V.I. Lênin khẳng định mục đích cao cả là xóa bỏ sự phân chia xã hội thành giai cấp, biến tất cả thành người lao động."
+  },
+  {
+    "id": 32,
+    "question": "Đặc trưng về phương diện kinh tế của chủ nghĩa xã hội là gì?",
+    "options": [
+      "Kinh tế tự cung tự cấp",
+      "Kinh tế thị trường tự do hoàn toàn",
+      "Nền kinh tế phát triển cao dựa trên LLSX hiện đại và chế độ công hữu tư liệu sản xuất chủ yếu",
+      "Nền kinh tế tri thức nhưng dựa trên tư hữu"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Chủ nghĩa xã hội có nền kinh tế phát triển cao dựa trên lực lượng sản xuất hiện đại và chế độ công hữu về tư liệu sản xuất chủ yếu."
+  },
+  {
+    "id": 33,
+    "question": "Trong giai đoạn đầu của chủ nghĩa cộng sản (CNXH), nguyên tắc phân phối chủ yếu là gì?",
+    "options": [
+      "Phân phối theo nhu cầu",
+      "Phân phối theo chức vụ",
+      "Phân phối theo lao động",
+      "Phân phối bình quân"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Theo V.I. Lênin, từ CNTB nhân loại chỉ tiến lên chế độ công hữu và 'chế độ phân phối sản phẩm theo lao động của mỗi người'."
+  },
+  {
+    "id": 34,
+    "question": "Ph. Ăngghen trả lời thế nào về việc có thể thủ tiêu chế độ tư hữu ngay lập tức được không?",
+    "options": [
+      "Có thể, thông qua sắc lệnh của nhà nước",
+      "Không thể được",
+      "Có thể nếu dùng bạo lực mạnh mẽ",
+      "Tùy thuộc vào ý muốn của nhân dân"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Ph. Ăngghen dứt khoát: 'Không, không thể được... chỉ có thể cải tạo xã hội hiện nay một cách dần dần'."
+  },
+  {
+    "id": 35,
+    "question": "Tại sao không thể thủ tiêu chế độ tư hữu ngay lập tức?",
+    "options": [
+      "Vì giai cấp tư sản còn quá mạnh",
+      "Vì nhân dân chưa đồng ý",
+      "Vì lực lượng sản xuất chưa tăng lên đến mức cần thiết",
+      "Vì thiếu luật pháp quy định"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Chỉ khi nào tạo nên được một khối lượng tư liệu sản xuất (lực lượng sản xuất) cần thiết thì khi ấy mới thủ tiêu được tư hữu."
+  },
+  {
+    "id": 36,
+    "question": "Theo V.I. Lênin, để thiết lập một chế độ xã hội cao hơn CNTB (nâng cao năng suất lao động), cần phải làm gì?",
+    "options": [
+      "Kéo dài thời gian làm việc của công nhân",
+      "Tổ chức lao động theo một trình độ cao hơn",
+      "Giảm lương của người lao động",
+      "Nhập khẩu toàn bộ máy móc từ nước ngoài"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Nâng cao năng suất lao động và do đó phải tổ chức lao động theo một trình độ cao hơn, tổ chức chặt chẽ và kỷ luật nghiêm."
+  },
+  {
+    "id": 37,
+    "question": "Theo V.I. Lênin, ở một nước tiểu nông, trước hết cần 'bắc chiếc cầu nhỏ' xuyên qua hình thức nào để tiến lên CNXH?",
+    "options": [
+      "Kinh tế tự nhiên",
+      "Chủ nghĩa tư bản độc quyền",
+      "Chủ nghĩa tư bản nhà nước",
+      "Kinh tế hợp tác xã toàn diện"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Lênin chỉ rõ: 'phải bắc những chiếc cầu nhỏ vững chắc, đi xuyên qua chủ nghĩa tư bản nhà nước, tiến lên chủ nghĩa xã hội'."
+  },
+  {
+    "id": 38,
+    "question": "V.I. Lênin đánh giá dưới Chính quyền Xô viết, chủ nghĩa tư bản nhà nước có thể chiếm bao nhiêu phần của CNXH?",
+    "options": [
+      "1/2 chủ nghĩa xã hội",
+      "2/3 chủ nghĩa xã hội",
+      "3/4 chủ nghĩa xã hội",
+      "100% chủ nghĩa xã hội"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Ông khẳng định: 'dưới Chính quyền Xôviết thì chủ nghĩa tư bản nhà nước sẽ có thể là 3/4 chủ nghĩa xã hội'."
+  },
+  {
+    "id": 39,
+    "question": "Chủ nghĩa xã hội là chế độ xã hội do ai làm chủ?",
+    "options": [
+      "Giai cấp tư sản",
+      "Đảng Cộng sản",
+      "Nhân dân lao động",
+      "Tầng lớp tri thức"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Đặc trưng: Chủ nghĩa xã hội là chế độ xã hội do nhân dân lao động làm chủ. Nhân dân là chủ thể của xã hội."
+  },
+  {
+    "id": 40,
+    "question": "Theo C. Mác, bước thứ nhất trong cuộc cách mạng công nhân là giành lấy cái gì?",
+    "options": [
+      "Ruộng đất",
+      "Tư bản",
+      "Dân chủ",
+      "Hòa bình"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "C. Mác và Ph. Ăngghen: 'Bước thứ nhất trong cuộc cách mạng công nhân là giai cấp vô sản biến thành giai cấp thống trị, là giành lấy dân chủ'."
+  },
+  {
+    "id": 41,
+    "question": "V.I. Lênin nhận định chế độ dân chủ vô sản (Chính quyền Xôviết) so với chế độ dân chủ tư sản như thế nào?",
+    "options": [
+      "Chỉ ngang bằng nhau",
+      "Dân chủ hơn gấp triệu lần",
+      "Kém dân chủ hơn do có chuyên chính",
+      "Hoàn toàn giống nhau về bản chất"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Lênin khẳng định: 'Chính quyền Xôviết so với nước cộng hòa tư sản dân chủ nhất thì cũng dân chủ hơn gấp triệu lần'."
+  },
+  {
+    "id": 42,
+    "question": "Nhà nước kiểu mới trong chủ nghĩa xã hội mang bản chất của giai cấp nào?",
+    "options": [
+      "Giai cấp nông dân",
+      "Giai cấp tư sản",
+      "Giai cấp công nhân",
+      "Toàn thể nhân loại"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Đặc trưng: CNXH có nhà nước kiểu mới mang bản chất giai cấp công nhân, đại biểu cho lợi ích, quyền lực và ý chí của nhân dân lao động."
+  },
+  {
+    "id": 43,
+    "question": "Theo V.I. Lênin, chuyên chính cách mạng của giai cấp vô sản duy trì quyền lực bằng công cụ gì đối với giai cấp tư sản?",
+    "options": [
+      "Bằng giáo dục thuyết phục",
+      "Bằng bạo lực",
+      "Bằng kinh tế",
+      "Bằng nhượng bộ chính trị"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Chuyên chính cách mạng của giai cấp vô sản là một chính quyền do giai cấp vô sản giành được và duy trì bằng bạo lực đối với giai cấp tư sản."
+  },
+  {
+    "id": 44,
+    "question": "Chuyên chính vô sản thực hiện dân chủ cho đối tượng nào?",
+    "options": [
+      "Cho bọn nhà giàu",
+      "Cho tuyệt đại đa số nhân dân (người nghèo)",
+      "Chỉ cho đảng viên",
+      "Chỉ cho công nhân công nghiệp"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Chuyên chính vô sản lần đầu tiên biến thành chế độ dân chủ cho người nghèo, chế độ dân chủ cho nhân dân chứ không phải cho bọn nhà giàu."
+  },
+  {
+    "id": 45,
+    "question": "Chuyên chính vô sản áp dụng biện pháp hạn chế quyền tự do đối với ai?",
+    "options": [
+      "Đối với tầng lớp trí thức",
+      "Đối với nông dân",
+      "Đối với bọn áp bức, bọn bóc lột, bọn tư bản",
+      "Đối với tất cả mọi người"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Đồng thời với mở rộng dân chủ, chuyên chính vô sản thực hành biện pháp hạn chế quyền tự do đối với bọn áp bức, bóc lột, tư bản."
+  },
+  {
+    "id": 46,
+    "question": "Đặc trưng về lĩnh vực tinh thần của chủ nghĩa xã hội là gì?",
+    "options": [
+      "Xóa bỏ hoàn toàn văn hóa quá khứ",
+      "Nền văn hóa phát triển cao, kế thừa tinh hoa văn hóa nhân loại",
+      "Chỉ phát triển văn hóa bản địa",
+      "Tự do văn hóa vô chính phủ"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đặc trưng: CNXH có nền văn hóa phát triển cao, kế thừa và phát huy những giá trị của văn hóa dân tộc và tinh hoa văn hóa nhân loại."
+  },
+  {
+    "id": 47,
+    "question": "V.I. Lênin gọi nền văn hóa mới xã hội chủ nghĩa bằng thuật ngữ gì?",
+    "options": [
+      "Văn hóa đại chúng",
+      "Văn hóa tư sản kiểu mới",
+      "Văn hóa vô sản",
+      "Văn hóa hàn lâm"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Lênin luận giải sâu sắc về 'văn hóa vô sản' - nền văn hóa mới xã hội chủ nghĩa."
+  },
+  {
+    "id": 48,
+    "question": "Để xây dựng nền văn hóa vô sản, thái độ đối với di sản văn hóa của loài người là gì?",
+    "options": [
+      "Phủ định sạch trơn",
+      "Sự hiểu biết chính xác và cải tạo nền văn hóa do loài người sáng tạo ra",
+      "Chỉ tiếp thu văn hóa phương Đông",
+      "Bảo tồn nguyên vẹn không thay đổi"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Lênin: 'chỉ có sự hiểu biết chính xác về nền văn hóa được sáng tạo ra trong toàn bộ quá trình phát triển của loài người và việc cải tạo nền văn hóa đó mới có thể xây dựng được'."
+  },
+  {
+    "id": 49,
+    "question": "Người cộng sản làm giàu trí óc của mình bằng cách nào theo V.I. Lênin?",
+    "options": [
+      "Chỉ học lý luận chính trị",
+      "Bằng sự hiểu biết tất cả những kho tàng trí thức mà nhân loại đã tạo ra",
+      "Từ chối mọi thành tựu của xã hội tư bản",
+      "Chỉ học kiến thức quân sự"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Lênin: 'Người ta chỉ có thể trở thành người cộng sản khi biết làm giàu trí óc của mình bằng sự hiểu biết tất cả những kho tàng trí thức mà nhân loại đã tạo ra'."
+  },
+  {
+    "id": 50,
+    "question": "Đặc trưng về quan hệ quốc tế của chủ nghĩa xã hội là gì?",
+    "options": [
+      "Bành trướng lãnh thổ",
+      "Cô lập với thế giới bên ngoài",
+      "Bảo đảm bình đẳng, đoàn kết giữa các dân tộc và hợp tác hữu nghị",
+      "Cạnh tranh tiêu diệt các dân tộc khác"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Đặc trưng: Chủ nghĩa xã hội bảo đảm bình đẳng, đoàn kết giữa các dân tộc và có quan hệ hữu nghị, hợp tác với nhân dân các nước."
+  },
+  {
+    "id": 51,
+    "question": "Nguyên tắc cốt lõi để giải quyết vấn đề dân tộc của C. Mác và Ph. Ăngghen là gì?",
+    "options": [
+      "Sáp nhập các dân tộc nhỏ vào dân tộc lớn",
+      "Xóa bỏ tình trạng người bóc lột người thì dân tộc này bóc lột dân tộc khác cũng bị xóa bỏ",
+      "Xây dựng hàng rào thuế quan",
+      "Giao thương tự do tuyệt đối"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Nguyên tắc: xóa bỏ tình trạng người bóc lột người thì tình trạng dân tộc này bóc lột dân tộc khác cũng sẽ bị xóa bỏ."
+  },
+  {
+    "id": 52,
+    "question": "Cương lĩnh về vấn đề dân tộc trong chủ nghĩa xã hội của V.I. Lênin gồm mấy nguyên tắc cơ bản?",
+    "options": [
+      "2 nguyên tắc",
+      "3 nguyên tắc",
+      "4 nguyên tắc",
+      "5 nguyên tắc"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Gồm 3 nguyên tắc: Các dân tộc hoàn toàn bình đẳng; các dân tộc được quyền tự quyết; liên hiệp công nhân tất cả các dân tộc lại."
+  },
+  {
+    "id": 53,
+    "question": "Theo V.I. Lênin, chế độ nào thật sự đảm bảo quyền bình đẳng giữa các dân tộc?",
+    "options": [
+      "Chế độ quân chủ",
+      "Chế độ cộng hòa tư sản",
+      "Chế độ Xôviết",
+      "Chế độ tư bản độc quyền"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Lênin khẳng định: 'chỉ có chế độ Xôviết là chế độ có thể thật sự đảm bảo quyền bình đẳng giữa các dân tộc'."
+  },
+  {
+    "id": 54,
+    "question": "Trọng tâm trong toàn bộ chính sách của Quốc tế Cộng sản về vấn đề dân tộc và thuộc địa là gì?",
+    "options": [
+      "Đưa giai cấp vô sản và quần chúng lao động tất cả các dân tộc lại gần nhau",
+      "Chia rẽ các quốc gia tư bản",
+      "Thúc đẩy chiến tranh thương mại",
+      "Xóa bỏ hoàn toàn biên giới quốc gia ngay lập tức"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Trọng tâm là cần phải đưa giai cấp vô sản và quần chúng lao động tất cả các dân tộc và các nước lại gần nhau trong cuộc đấu tranh chung."
+  },
+  {
+    "id": 55,
+    "question": "Khẩu hiệu nổi tiếng của V.I. Lênin về tinh thần đoàn kết quốc tế là gì?",
+    "options": [
+      "Vô sản tất cả các nước, đoàn kết lại!",
+      "Vô sản tất cả các nước và các dân tộc bị áp bức, đoàn kết lại!",
+      "Tự do, Bình đẳng, Bác ái!",
+      "Hòa bình, Ruộng đất, Bánh mỳ!"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Phát triển từ C. Mác, Lênin đưa ra khẩu hiệu: 'Vô sản tất cả các nước và các dân tộc bị áp bức, đoàn kết lại!'."
+  },
+  {
+    "id": 56,
+    "question": "Mối quan hệ giữa lực lượng sản xuất và quan hệ sản xuất trong xã hội tư bản chủ nghĩa diễn ra như thế nào?",
+    "options": [
+      "Luôn luôn phù hợp và thúc đẩy nhau",
+      "LLSX mang tính xã hội hóa cao mâu thuẫn gay gắt với QHSX chiếm hữu tư nhân",
+      "QHSX đi trước mở đường cho LLSX lạc hậu",
+      "Hoàn toàn độc lập không tác động đến nhau"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "LLSX càng được cơ khí hóa mang tính xã hội hóa cao thì càng mâu thuẫn với QHSX tư bản chủ nghĩa dựa trên chế độ chiếm hữu tư nhân."
+  },
+  {
+    "id": 57,
+    "question": "Động lực trực tiếp dẫn đến sự bùng nổ của cách mạng xã hội chủ nghĩa là gì?",
+    "options": [
+      "Mâu thuẫn giữa các nhà tư bản với nhau",
+      "Sự cạn kiệt tài nguyên thiên nhiên",
+      "Mâu thuẫn gay gắt giữa giai cấp công nhân và giai cấp tư sản",
+      "Sự xuất hiện của công nghệ mới"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Mâu thuẫn kinh tế biểu hiện thành mâu thuẫn đối kháng giữa giai cấp công nhân và giai cấp tư sản, đây là động lực trực tiếp dẫn đến cách mạng."
+  },
+  {
+    "id": 58,
+    "question": "Nhà nước Xô viết (theo V.I. Lênin) thực hiện chức năng gì đối với quần chúng nhân dân?",
+    "options": [
+      "Cai trị bằng pháp luật hà khắc",
+      "Thu thuế nặng nề",
+      "Tập hợp, lôi cuốn đông đảo nhân dân tham gia quản lý nhà nước",
+      "Tước đoạt tư liệu sinh hoạt"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Nhà nước Xôviết sẽ tập hợp, lôi cuốn đông đảo nhân dân tham gia quản lý nhà nước, quản lý xã hội."
+  },
+  {
+    "id": 59,
+    "question": "Cơ sở nào để xây dựng cộng đồng dân tộc bình đẳng, đoàn kết trong CNXH?",
+    "options": [
+      "Chỉ dựa vào sự tự nguyện",
+      "Cơ sở kinh tế - xã hội, chính trị - pháp lý và văn hóa",
+      "Cơ sở sức mạnh quân sự",
+      "Cơ sở đồng nhất về ngôn ngữ"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Cộng đồng dân tộc bình đẳng đoàn kết được xây dựng, củng cố trên cơ sở chính trị - pháp lý, đặc biệt là cơ sở kinh tế - xã hội và văn hóa."
+  },
+  {
+    "id": 60,
+    "question": "Đặc tính nào KHÔNG phản ánh đúng bản chất của chủ nghĩa xã hội?",
+    "options": [
+      "Vì con người",
+      "Nhân dân lao động làm chủ",
+      "Duy trì chế độ người bóc lột người",
+      "Nền kinh tế phát triển cao"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Chủ nghĩa xã hội nhằm xóa bỏ triệt để tình trạng người áp bức, bóc lột người."
+  },
+  {
+    "id": 61,
+    "question": "Việc giải quyết vấn đề dân tộc trong CNXH khác biệt căn bản với tư tưởng nào sau đây?",
+    "options": [
+      "Chủ nghĩa quốc tế vô sản",
+      "Chủ nghĩa Mác - Lênin",
+      "Chủ nghĩa dân tộc cực đoan, hẹp hòi và phân biệt chủng tộc",
+      "Chủ nghĩa yêu nước chân chính"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Đường lối của Lênin khác biệt căn bản với quan điểm của chủ nghĩa dân tộc cực đoan, hẹp hòi hoặc chủ nghĩa phân biệt chủng tộc."
+  },
+  {
+    "id": 62,
+    "question": "Tính chất của thời kỳ quá độ từ chủ nghĩa tư bản lên chủ nghĩa cộng sản là gì?",
+    "options": [
+      "Một bước nhảy vọt không cần thời gian",
+      "Thời kỳ cải biến cách mạng sâu sắc từ xã hội nọ sang xã hội kia",
+      "Thời kỳ chỉ phát triển về mặt văn hóa",
+      "Thời kỳ duy trì nguyên vẹn xã hội cũ"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đó là một thời kỳ cải biến cách mạng từ xã hội TBCN sang xã hội CSCN, cần một khoảng thời gian quá độ nhất định."
+  },
+  {
+    "id": 63,
+    "question": "Đặc điểm của nền văn hóa xã hội chủ nghĩa về mặt thái độ với quá khứ?",
+    "options": [
+      "Xóa bỏ hoàn toàn",
+      "Bê nguyên si văn hóa cũ",
+      "Kế thừa và phát huy những giá trị của văn hóa dân tộc",
+      "Chỉ lai căng văn hóa phương Tây"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "CNXH kế thừa và phát huy những giá trị của văn hóa dân tộc và tinh hoa văn hóa nhân loại."
+  },
+  {
+    "id": 64,
+    "question": "Nguyên nhân sâu xa nhất dẫn đến sự diệt vong của CNTB và sự ra đời của CNXH là gì?",
+    "options": [
+      "Sự nổi dậy tự phát của nông dân",
+      "Quy luật quan hệ sản xuất phải phù hợp với trình độ phát triển của lực lượng sản xuất",
+      "Sự can thiệp của nước ngoài",
+      "Khủng hoảng tài chính đơn thuần"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Chính sự phát triển của LLSX làm cho QHSX tư bản lỗi thời, đòi hỏi một cuộc cách mạng xã hội để thay thế bằng QHSX mới (XHCN)."
+  },
+  {
+    "id": 65,
+    "question": "Về mặt xã hội, xã hội cộng sản chủ nghĩa (giai đoạn đầu) mang những dấu vết của xã hội cũ về những phương diện nào?",
+    "options": [
+      "Chỉ về kinh tế",
+      "Chỉ về đạo đức",
+      "Kinh tế, đạo đức, tinh thần",
+      "Hoàn toàn không mang dấu vết nào"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "C. Mác khẳng định nó là một xã hội 'về mọi phương diện - kinh tế, đạo đức, tinh thần - còn mang những dấu vết của xã hội cũ'."
+  },
+  {
+    "id": 66,
+    "question": "Giai cấp công nhân và nhân dân lao động sử dụng công cụ nào để cải tạo xã hội cũ, xây dựng xã hội mới?",
+    "options": [
+      "Các tập đoàn kinh tế",
+      "Nhà nước của mình (Nhà nước XHCN)",
+      "Các tổ chức tôn giáo",
+      "Lực lượng tư bản tư nhân"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Trong đặc trưng chính trị, nhân dân sử dụng nhà nước XHCN như một công cụ quản lý để tổ chức, cải tạo xã hội cũ và xây dựng xã hội mới."
+  },
+  {
+    "id": 67,
+    "question": "Chế độ công hữu về tư liệu sản xuất chủ yếu trong CNXH nhằm giải quyết triệt để vấn đề gì?",
+    "options": [
+      "Tăng trưởng kinh tế nóng",
+      "Tình trạng người bóc lột người sinh ra từ chế độ tư hữu",
+      "Khủng hoảng thừa",
+      "Thất nghiệp tự nhiên"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Thiết lập công hữu là nền tảng để xóa bỏ tận gốc cơ sở kinh tế của tình trạng người bóc lột người do chế độ tư hữu TBCN gây ra."
+  },
+  {
+    "id": 68,
+    "question": "Theo V.I. Lênin, trong chủ nghĩa xã hội, nền văn hóa đóng vai trò gì?",
+    "options": [
+      "Công cụ giải trí đơn thuần",
+      "Nền tảng tinh thần, biến con người thành người chân, thiện, mỹ",
+      "Hoạt động kinh doanh chính",
+      "Công cụ tuyên truyền chiến tranh"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Văn hóa đã hun đúc nên tâm hồn, bản lĩnh con người, biến con người thành con người chân, thiện, mỹ."
+  },
+  {
+    "id": 69,
+    "question": "Để đi lên chủ nghĩa xã hội, ngoài việc kế thừa tinh hoa nhân loại, cần phải chống lại điều gì?",
+    "options": [
+      "Chống lại văn hóa truyền thống",
+      "Chống tư tưởng, văn hóa phi vô sản, trái với giá trị tiến bộ",
+      "Chống lại văn hóa phương Tây",
+      "Chống lại khoa học tự nhiên"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đồng thời cần chống tư tưởng, văn hóa phi vô sản, trái với những giá trị truyền thống tốt đẹp và phương hướng đi lên CNXH."
+  },
+  {
+    "id": 70,
+    "question": "Trong thời kỳ quá độ, việc phát triển kinh tế hàng hóa nhiều thành phần được V.I. Lênin đánh giá như thế nào?",
+    "options": [
+      "Là sai lầm cần loại bỏ",
+      "Là sự nhượng bộ tạm thời không cần thiết",
+      "Là một sự cần thiết khách quan",
+      "Chỉ áp dụng cho các nước tư bản phát triển"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Lênin đặc biệt nhấn mạnh: 'Trong thời kỳ quá độ lên chủ nghĩa xã hội, cần thiết phải phát triển kinh tế hàng hóa nhiều thành phần'."
+  },
+  {
+    "id": 71,
+    "question": "Học thuyết nào của Mác - Lênin là tài sản vô giá, cung cấp phương pháp khoa học để phân kỳ lịch sử?",
+    "options": [
+      "Học thuyết giá trị thặng dư",
+      "Học thuyết hình thái kinh tế - xã hội",
+      "Học thuyết tiến hóa",
+      "Học thuyết tế bào"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Học thuyết hình thái kinh tế - xã hội đã cung cấp tiêu chuẩn thực sự duy vật, khoa học cho sự phân kỳ lịch sử nhân loại."
+  },
+  {
+    "id": 72,
+    "question": "Chủ nghĩa xã hội mở rộng ảnh hưởng và góp phần tích cực vào cuộc đấu tranh chung của nhân dân thế giới vì các mục tiêu nào?",
+    "options": [
+      "Chiến tranh và mở rộng thuộc địa",
+      "Hòa bình, độc lập dân tộc, dân chủ và tiến bộ xã hội",
+      "Bảo vệ trật tự tư bản chủ nghĩa",
+      "Phát triển vũ khí hạt nhân"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "CNXH góp phần tích cực vào cuộc đấu tranh chung của nhân dân thế giới vì hòa bình, độc lập dân tộc, dân chủ và tiến bộ xã hội."
+  },
+  {
+    "id": 73,
+    "question": "Để thủ tiêu chế độ tư hữu và xác lập chế độ công hữu trong thời kỳ quá độ, cách thức tiến hành là gì?",
+    "options": [
+      "Tiến hành tức thời, triệt để ngay lập tức",
+      "Cải tạo xã hội hiện nay một cách dần dần",
+      "Chỉ thực hiện ở lĩnh vực nông nghiệp",
+      "Giao cho tư bản nước ngoài quản lý"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Ph. Ăngghen khẳng định cách mạng vô sản sẽ chỉ có thể 'cải tạo xã hội hiện nay một cách dần dần'."
+  },
+  {
+    "id": 74,
+    "question": "Sự thống nhất của giai cấp vô sản và quần chúng lao động các nước là điều kiện để làm gì?",
+    "options": [
+      "Thống trị thế giới",
+      "Chiến thắng hoàn toàn chủ nghĩa tư bản",
+      "Xây dựng đế quốc mới",
+      "Xóa bỏ nhà nước lập tức"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Lênin: 'Không có sự cố gắng tự nguyện tiến tới sự liên minh... thì không thể chiến thắng hoàn toàn chủ nghĩa tư bản được'."
+  },
+  {
+    "id": 75,
+    "question": "Tính chất của nền dân chủ trong chủ nghĩa xã hội so với các chế độ trước đó là gì?",
+    "options": [
+      "Thu hẹp phạm vi dân chủ",
+      "Dân chủ giả hiệu",
+      "Thực hiện quyền làm chủ ngày càng rộng rãi và đầy đủ của nhân dân",
+      "Dân chủ cho một thiểu số tinh hoa"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Nhân dân lao động là chủ thể của xã hội, thực hiện quyền làm chủ ngày càng rộng rãi và đầy đủ trong quá trình cải tạo và xây dựng xã hội."
   }
 ]
