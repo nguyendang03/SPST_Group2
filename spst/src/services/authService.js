@@ -2,7 +2,9 @@ import {
   createUserWithEmailAndPassword, 
   signInWithEmailAndPassword,
   signOut,
-  updateProfile
+  updateProfile,
+  GoogleAuthProvider,
+  signInWithPopup
 } from 'firebase/auth';
 import { auth } from '../config/firebase';
 
@@ -31,6 +33,16 @@ export const logoutUser = async () => {
   try {
     await signOut(auth);
     return { success: true };
+  } catch (error) {
+    return { success: false, error: error.message };
+  }
+};
+
+export const loginWithGoogle = async () => {
+  try {
+    const provider = new GoogleAuthProvider();
+    const userCredential = await signInWithPopup(auth, provider);
+    return { success: true, user: userCredential.user };
   } catch (error) {
     return { success: false, error: error.message };
   }

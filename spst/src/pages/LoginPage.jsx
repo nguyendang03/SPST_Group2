@@ -3,7 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 import { HiMail, HiLockClosed } from 'react-icons/hi';
-import { loginUser } from '../services/authService';
+import { FcGoogle } from 'react-icons/fc';
+import { loginUser, loginWithGoogle } from '../services/authService';
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -30,6 +31,19 @@ const LoginPage = () => {
 
     setLoading(true);
     const result = await loginUser(formData.email, formData.password);
+    setLoading(false);
+
+    if (result.success) {
+      toast.success('Đăng nhập thành công!');
+      navigate('/');
+    } else {
+      toast.error('Đăng nhập thất bại: ' + result.error);
+    }
+  };
+
+  const handleGoogleLogin = async () => {
+    setLoading(true);
+    const result = await loginWithGoogle();
     setLoading(false);
 
     if (result.success) {
@@ -116,6 +130,28 @@ const LoginPage = () => {
               {loading ? 'Đang đăng nhập...' : 'Đăng nhập'}
             </button>
           </form>
+
+          {/* Divider */}
+          <div className="mt-6 mb-6">
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-gray-300"></div>
+              </div>
+              <div className="relative flex justify-center text-sm">
+                <span className="px-2 bg-white text-gray-500">Hoặc</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Google Login Button */}
+          <button
+            onClick={handleGoogleLogin}
+            disabled={loading}
+            className="w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 rounded-lg font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+          >
+            <FcGoogle className="h-5 w-5" />
+            Đăng nhập bằng Google
+          </button>
 
           {/* Register Link */}
           <p className="mt-6 text-center text-sm text-gray-600">
