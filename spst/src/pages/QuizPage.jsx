@@ -1,13 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import toast from 'react-hot-toast';
 import gameData from '../../gameData.json';
 import ResultScreen from '../components/ResultScreen';
 import ExplanationScreen from '../components/ExplanationScreen';
+import { useAuth } from '../contexts/AuthContext';
+import { saveScore } from '../services/scoreService';
 
 const QuizPage = () => {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
@@ -19,39 +22,10 @@ const QuizPage = () => {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [totalTimeSpent, setTotalTimeSpent] = useState(0);
   const [quizStartTime] = useState(Date.now());
+  const [scoreSaved, setScoreSaved] = useState(false);
 
   const currentQuestion = gameData[currentQuestionIndex];
   const totalQuestions = gameData.length;
-
-  // Timer countdown
-  useEffect(() => {
-    if (timeLeft > 0 && !showExplanation) {
-      const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
-      return () => clearTimeout(timer);
-    } else if (timeLeft === 0 && !showExplanation) {
-      handleSubmitAnswer();
-    }
-  }, [timeLeft, showExplanation]);
-
-  // Reset timer when question changes
-  useEffect(() => {
-    setTimeLeft(30);
-    setSelectedAnswer(null);
-    setShowExplanation(false);
-    setShowExplanationScreen(false);
-  }, [currentQuestionIndex]);
-
-  // Keyboard navigation for explanation screen
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (e.key === 'Enter' && showExplanationScreen) {
-        handleNextQuestion();
-      }
-    };
-    
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [showExplanationScreen, currentQuestionIndex]);
 
   const handleAnswerSelect = (index) => {
     if (!showExplanation) {
@@ -87,7 +61,7 @@ const QuizPage = () => {
     setShowExplanationScreen(true);
   };
 
-  const handleNextQuestion = () => {
+  const handleNextQuestion = useCallback(async () => {
     if (currentQuestionIndex < totalQuestions - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
@@ -95,9 +69,66 @@ const QuizPage = () => {
       const timeSpent = Math.floor((Date.now() - quizStartTime) / 1000);
       setTotalTimeSpent(timeSpent);
       setQuizCompleted(true);
+      
+      // Save score to Firestore if user is logged in
+      const correctCount = [...userAnswers, {
+        questionId: currentQuestion.id,
+        selectedAnswer,
+        isCorrect: selectedAnswer === currentQuestion.correctAnswerIndex,
+        pointsEarned: selectedAnswer === currentQuestion.correctAnswerIndex ? timeLeft * 10 : 0
+      }].filter(a => a.isCorrect).length;
+      
+      if (user) {
+        const result = await saveScore(
+          user.uid,
+          user.displayName || 'Anonymous',
+          score,
+          correctCount,
+          totalQuestions,
+          timeSpent
+        );
+        
+        if (result.success) {
+          setScoreSaved(true);
+          toast.success('Điểm đã được lưu!');
+        } else {
+          toast.error('Không thể lưu điểm');
+        }
+      }
+      
       toast.success('Hoàn thành bài quiz!');
     }
-  };
+  }, [currentQuestionIndex, totalQuestions, quizStartTime, userAnswers, currentQuestion, selectedAnswer, timeLeft, user, score]);
+  
+  // Timer countdown
+  useEffect(() => {
+    if (timeLeft > 0 && !showExplanation) {
+      const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
+      return () => clearTimeout(timer);
+    } else if (timeLeft === 0 && !showExplanation) {
+      handleSubmitAnswer();
+    }
+  }, [timeLeft, showExplanation]);
+
+  // Reset timer when question changes
+  useEffect(() => {
+    setTimeLeft(30);
+    setSelectedAnswer(null);
+    setShowExplanation(false);
+    setShowExplanationScreen(false);
+  }, [currentQuestionIndex]);
+
+  // Keyboard navigation for explanation screen
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.key === 'Enter' && showExplanationScreen) {
+        handleNextQuestion();
+      }
+    };
+    
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [showExplanationScreen, handleNextQuestion]);
 
   const handlePreviousQuestion = () => {
     if (currentQuestionIndex > 0) {
@@ -125,6 +156,7 @@ const QuizPage = () => {
     setShowExplanationScreen(false);
     setQuizCompleted(false);
     setTotalTimeSpent(0);
+    setScoreSaved(false);
   };
 
   // Result Screen

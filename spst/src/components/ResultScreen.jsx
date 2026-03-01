@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { HiStar, HiSparkles } from 'react-icons/hi';
+import { FaTrophy, FaGem } from 'react-icons/fa';
+import { useAuth } from '../contexts/AuthContext';
 
 const ResultScreen = ({ 
   score, 
@@ -9,6 +12,7 @@ const ResultScreen = ({
   onPlayAgain 
 }) => {
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   const totalTimeMinutes = Math.floor(totalTimeSpent / 60);
   const totalTimeSeconds = totalTimeSpent % 60;
@@ -37,15 +41,22 @@ const ResultScreen = ({
               >
                 Trang chủ
               </button>
-              <button className="text-sm font-medium text-gray-700 hover:text-red-600 transition-colors">
+              <button 
+                onClick={() => navigate('/leaderboard')}
+                className="text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+              >
                 Bảng xếp hạng
               </button>
-              <button className="text-sm font-medium text-gray-700 hover:text-red-600 transition-colors">
-                Tài khoản
-              </button>
-              <div className="h-10 w-10 rounded-full bg-linear-to-br from-red-400 to-red-600 flex items-center justify-center text-white font-bold cursor-pointer">
-                A
-              </div>
+              {user && (
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium text-gray-700">
+                    {user.displayName || 'User'}
+                  </span>
+                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center text-white font-bold">
+                    {(user.displayName || 'U').charAt(0).toUpperCase()}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -58,25 +69,25 @@ const ResultScreen = ({
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute top-0 left-20 text-6xl"
+            className="absolute top-0 left-20"
           >
-            ⭐
+            <HiStar className="w-16 h-16 text-yellow-400" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="absolute top-10 right-20 text-4xl"
+            className="absolute top-10 right-20"
           >
-            🎉
+            <HiSparkles className="w-12 h-12 text-pink-500" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
-            className="absolute bottom-20 left-10 text-3xl"
+            className="absolute bottom-20 left-10"
           >
-            💎
+            <FaGem className="w-10 h-10 text-cyan-500" />
           </motion.div>
         </div>
 
@@ -190,7 +201,7 @@ const ResultScreen = ({
                 className="relative inline-flex items-center justify-center w-40 h-40 rounded-full bg-linear-to-br from-yellow-300 via-yellow-400 to-yellow-500 shadow-2xl mb-6"
               >
                 <div className="absolute inset-2 rounded-full bg-linear-to-br from-yellow-200 to-yellow-300"></div>
-                <div className="relative text-5xl">🏆</div>
+                <FaTrophy className="relative w-20 h-20 text-yellow-600" />
                 <div className="absolute -top-2 -right-2 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
                   MỚI NHẬN
                 </div>
@@ -213,6 +224,14 @@ const ResultScreen = ({
           transition={{ delay: 0.6 }}
           className="flex flex-wrap items-center justify-center gap-4 mb-8"
         >
+          <button
+            onClick={() => navigate('/leaderboard')}
+            className="inline-flex items-center gap-2 rounded-full border-2 border-yellow-400 bg-white px-8 py-3 text-base font-semibold text-yellow-600 hover:bg-yellow-50 transition-all"
+          >
+            <FaTrophy className="w-5 h-5" />
+            Bảng xếp hạng
+          </button>
+          
           <button
             onClick={() => navigate('/')}
             className="inline-flex items-center gap-2 rounded-full border-2 border-gray-300 bg-white px-8 py-3 text-base font-semibold text-gray-700 hover:bg-gray-50 transition-all"
